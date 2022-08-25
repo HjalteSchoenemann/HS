@@ -1,0 +1,22 @@
+body {background-color: yellowgreen}
+  
+
+
+/* overskrift h1 design */
+
+h1{
+font-style: oblique;
+font-size: 35px;
+text-align: center;
+color: tomato;
+}
+
+
+.kasse{
+float: right;
+background-color: tomato;
+width: 40%;
+height: 40%;
+overflow: hidden;
+font-size: 40;
+}
