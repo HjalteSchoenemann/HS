@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="portfolio.css">
+<title>MP's portfolie</title>
+</head>
+
+<body>
+<h1>Hjalte's portfolie</h1>
+
+
+
+
+<h2>Eksempel på dokumentation af kode</h2>
+Nedenstående er en den simpleste kode til en hjemmeside
+<pre>
+  <code>
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  Hello world.
+  &lt;/body&gt;
+  &lt;/html&gt;
+  </code>
+</pre>
+
+    GRUNDIGE BESKRIVELSE:   &lt;body&gt; elementet er dokumentets “krop”. Det er altså heri at alt synligt indhold placeres såsom overskrifter, tekstafsnit, knapper, billeder, links mv.
+
+
+
+
+</body>
+</html>
