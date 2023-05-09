@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="portfolio.css">
+<title>MP's portfolie</title>
+</head>
+
+<body>
+<h1>Makey Makey</h1>
+<h3>Beskrivelse af vores spil</h4>
+<p>I vores spil kommer en pil op på skærmen som enten peger op, ned eller til højre eller venstre. 
+    Målet er så at trykke på den respekterede piletast, og dermed optjene point. 
+    Pilene er kun på skærmen i kort tid så man skal være hurtig til at reagere, og hvis en 
+    forkert piletast trykkes på, bliver ens score nulstillet, og spillet fortsætter.  </p>
+
+
+<h3>Beskrivelse af det problem jeres program skal løse:</h3>
+Med udgangspunkt i følgende case, skal du udvikle en del af en løsning. Dansk idrætsforbund er stærkt bekymret over en ny undersøgelse, 
+der viser, at 3 ud af 4 børn og unge bevæger sig for lidt i hverdagen. De mistænker at for meget stillesiddende skærmtid spiller en 
+rolle og vil derfor gerne motivere unge mennesker til at bevæge sig mere og til at være mere sociale, når de spiller computerspil. 
+Derfor har de besluttet sig for at udvikle et spil i p5.js, der 
+
+    <p>spilles i af to eller flere personer, der fysisk er i nærheden af hinanden.</p>
+    <p>Involverer et samarbejdende eller konkurrerende element, gerne inspireret af sport.</p>
+    <p>Styres med Makey Makey og ikke direkte fra computeren.</p>
+
+
+<h3>Liste over ting I vil ændre på baggrund af brugertesten</h5>
+
+    <p>   -   Pilene som kommer op skal ikke opstå efter en tilfældig tidsmængde men efter fx. 1 sekund</p>
+    <p>   -   Hvid skal ikke skrives på gul</p>
+    <p>   -   Nye pille skal ikke opstå direkte efter et tryg på en tast</p>
+    <p>   -   Spillet skal næmmere kunne overføres til noget fysiks</p>
+<h3>Eksempel på dokumentation af kode</h2>
+<pre>
+  <code>
+    if (keyCode == LEFT_ARROW  && n==1)
+	{
+		score += 1;
+		n=int(random(4));
+		print(score);
+    }
+  </code>
+</pre>
+
+    <h4>GRUNDIGE BESKRIVELSE:</h4>
+   <p> Den første linje beskriver: hvis venstre piltast trygges
+    på og billede nr. 1 er på skærmen så køres funktionen nedenfor:</p>
+   <p>Linje 3: Scoren går op med 1</p>
+   <p>Linje 4: Spilleren vises en af de fire pile, vel at mærke tilfældigt</p>
+   <p>Linje 5: Scoren vises på skærmen</p>
+<h3>Flowchart:</h3>
+   <img src="Flowchart.png" width="700"alt="Flowchart">
+</body>
+</html>

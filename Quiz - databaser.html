@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="Opgave-stylesheet.css">
+  <style>
+    code {
+      font-family: Consolas,"courier new";
+      color: black;
+      background-color: #f1f1f1;
+      padding: 2px;
+      font-size: 105%;
+    }
+    </style>
+</head>
+<body>
+  <div class="sidenav">
+    <a href="index.html"> Hovedside </a>
+    <a href="Astro-pi.html"> AstroPi </a>
+    <a href="IT-sikkerhed.html">IT sikkerhed</a>
+ <a href="Quiz-database.html"> Database - projekt - quiz</a>
+ <a href="Makey-makey-portfolio.html">Makey Makey</a>
+</div>
+
+<style>
+.sidenav {
+height: 100%;
+width: 200px;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+background-color: ivory;
+overflow-x: hidden;
+}
+    .sidenav a {
+color: black;
+padding: 16px;
+text-decoration: none;
+display: block;
+}
+    .content {
+margin-left: 200px;
+padding-left: 20px;
+}
+
+
+</style>
+
+<div class="content">
+        
+    <h1> Database - projekt</h1>
+    <p>For at se selve quizzen, gå til Alix's portfolio</p>
+
+  <h3>Beskrivelse af quizzen</h3>
+  <p>Vi har lavet en quiz der omhandler 17 fun-facts om adskillige dyr (alle spørgsmål og svar kan findes i nedenstående tabel). HTML brugerfladen er simpel og brugervenlig, idet der er kun en “ny”- og "svar”-knap, der hhv. giver et nyt spørgsmål og svaret tilhørende det givne spørgsmål.</p>
+  
+  <h3>Selve databasen og opstilling af den</h3>
+ <p> Her er al dataen organiseret i en simpel og overskuelig database (altså et regneark), der blev importeret som en csv således den kunne anvendes i programmet. </p>
+  <img src="Billeder/database-ID-overskrift.png" alt="database med ID og overskrift" height="200">
+  <img src="Billeder/databse-billed-svar.png" alt="database med svar og billed" height="200" >
+  <p>Der refereres her til Java Scripten, med kommandoen &lt;script&gt;. HTML-elementet &lt;script&gt; anvendes til at indlejre eksekverbar Java-Script kode:
+    “var” angiver de globale variable, og “let” er de variable, der ikke er globale. </p>
+  <pre>
+    <code >
+ 30  &lt;script&gt;
+ 31  let x;
+ 32  let data;
+ 33  var overskrift = null
+ 34  var svar = null
+ 35  var billed = null
+    </code>
+  </pre>
+
+  <h3>Uddybelse af databasetypen og teori</h3>
+  <p>
+  Eftersom vores database allerede er en relationel database, vil vi i stedet redegøre for hvorfor det er en relationel database og hvad det vil sige at den er normaliseret. 
+  For at en database kan blive kaldt for en relationel database skal den opfylde to ting;
+<br>
+  1. Der må ikke indgå den sammen data to gange i tabellen <br> 
+  2. De to (eller flere) tabeller skal være forbundet med hinanden. 
+  Vi har opstillet vores databaser så vi har 4 kolonner der er navngivet; ID, overskrift, svar og billede, som ses øverst på billedet.
+</p>
+<img src="Billeder/csv-databse-fil.png" alt="SCV database">
+
+<p>Man kan se på billedet at dataen ikke indgår i tabellen mere end én gang og at de 4 datatyper vi har (spørgsmål/overskrift, svar og billede) alle er forbundet. 
+
+  Vi kan yderligere tillade os at sige at vores data er normaliseret da det opfylder alle 5 krav;
+  Unik primærnøgle. <br>
+  1. Ingen kolonne må være afhængig af andre kolonner end primærnøglen. <br>
+  2. Der må kun være én datatype i hver kolonne. <br>
+  3. Det samme data skal kun forekomme et sted - det modsatte kaldes redundans. <br>
+  4. Data skal være relateret til hinanden. <br>
+  </p>
+  </div>
+</body>
+</html>
